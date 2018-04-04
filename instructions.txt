@@ -1,0 +1,28 @@
+Installar xamp
+Install composer
+Install Slim
+install resteasy extension chrome
+
+Modify
+C:\xampp\apache\conf\extra\httpd-vhosts.conf
+Coment all <VirtualHost *:80> like this:
+##<VirtualHost *:80>
+	##code
+##</VirtualHost>
+And add this virtual host:
+
+<VirtualHost *:80>
+    DocumentRoot "C:/xampp/htdocs"
+    ServerName localhost
+</VirtualHost>
+<VirtualHost *:80>
+    DocumentRoot "C:/xampp/htdocs/api-fer/Public"
+    ServerName api-fer
+</VirtualHost>
+
+Edit C:\Windows\System32\drivers\etc\hosts as Admin
+Add:
+127.0.0.1 api-fer
+
+Restart apache.
+
