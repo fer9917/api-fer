@@ -12,6 +12,7 @@ $app->get('/hello/{name}', function (Request $request, Response $response, array
     return $response;
 });
 
+require '../src/php/login.php';
 require '../src/php/products.php';
 
 

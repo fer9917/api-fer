@@ -20,3 +20,8 @@ CREATE TABLE IF NOT EXISTS `users` (
   `type` int(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO
+	users(user, name, pass, type)
+VALUES
+	('admin', 'Admin', 'b24c985bbc7b2fd0214f6dd741bd22848668b0e7', 2);
